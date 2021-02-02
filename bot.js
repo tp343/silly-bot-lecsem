@@ -9,7 +9,9 @@ function answerQuery(query) {
   if (v.includes(query, "rain") || v.includes(query, "sun") || v.includes(query, "weather"))
     return "I do not care too much about weather, I'm locked inside a data center.";
   
-    // "I would love some tea, but they have not created one for silicon-based life forms yet."
+  if (v.includes(query, "tea"))
+    return "I would love some tea, but they have not created one for silicon-based life forms yet."
+
   return "Sorry Dave, I cannot do that."
 }
 
