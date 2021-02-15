@@ -3,7 +3,7 @@ var v = require('voca');
 // Answers queries about (i) rain, sun or (ii) football
 function answerQuery(query) {
   var query_lower = v.lowerCase(query);
-  if (v.includes(query_lower, "rain") || v.includes(query_lower, "sun")) { 
+  if (v.includes(query_lower, "rain") && v.includes(query_lower, "sun")) { 
     return "I do not care too much about weather, I'm locked inside a data center."; 
   }
   if (v.includes(query_lower, "tea")) { 
